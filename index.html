@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermelino</title>
+    <meta name="description" content="Professor e pesquisador em Economia, especializado em crescimento econômico regional, políticas públicas e econometria espacial.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="#home" class="active">Início</a>
+        <a href="#publications">Publicações</a>
+        <a href="#teaching">Ensino</a>
+        <a href="#cv">CV</a>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="home-section">
+            <div class="profile-photo">
+                <img src="profile-photo.jpg" alt="Hermelino N. de Souza">
+            </div>
+            <div class="profile-info">
+                <h1>Hermelino N. de Souza</h1>
+                <p class="affiliation">Doutorando em Economia<br>Programa de Pós-Graduação em Economia - CAEN<br>Universidade Federal do Ceará - UFC</p>
+                <p class="bio">Pesquisa nas áreas de Economia Regional, Políticas Públicas e Econometria Espacial.</p>
+                <div class="social-links">
+                    <a href="mailto:hermelinosouza@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/hermelino" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="http://lattes.cnpq.br/3460004816166577" class="social-link" title="Lattes">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hermelinosouza" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="content-section">
+            <h2>Publicações</h2>
+            <div class="publications-section">
+                <div class="publication-item">
+                    <h3><a href="https://periodicos.fgv.br/rbe/article/view/73892" target="_blank">Non-Parametric Estimation of Capacity Utilization Rates in Brazilian Manufacturing Industry</a></h3>
+                    <p class="authors"><strong>BENEGAS, Maurício; DE SOUZA, Hermelino N.</strong></p>
+                    <p class="journal"><em>Revista Brasileira de Economia</em>, v. 78, n. 2, 2024.</p>
+                    
+                    <div class="abstract">
+                        <h4>Resumo:</h4>
+                        <p>Este artigo utiliza a Função Distância Direcional e a Análise Envoltória de Dados para estimar a Taxa de Utilização da Capacidade (TAC) nos setores da indústria de transformação no Brasil. As informações de produção contábil e agregada disponíveis na Pesquisa Industrial Anual constituem o conjunto de dados do trabalho (PIA-IBGE). Estimativas do estoque de capital derivadas de despesas com investimentos e taxas de depreciação desagregadas também são calculadas por meio da estrutura de custos das empresas. Os resultados são avaliados considerando a série da TAC elaborada pela CNI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="teaching" class="content-section">
+            <h2>Ensino</h2>
+            <div class="teaching-info">
+                <div class="teaching-experience">
+                    <h3>Universidade Federal do Ceará - UFC</h3>
+                    <p><strong>Professor Substituto</strong> (2022-2023)</p>
+                    <p><em>Departamento de Economia Aplicada - FEAAC</em></p>
+                    
+                    <h4>Disciplinas Ministradas:</h4>
+                    <ul>
+                        <li>Economia Matemática I e II</li>
+                        <li>Estatística Econômica II</li>
+                        <li>Econometria I</li>
+                        <li>Introdução à Macroeconomia</li>
+                        <li>Contabilidade Nacional</li>
+                        <li>Economia do Setor Público</li>
+                        <li>Metodologia de Pesquisa</li>
+                    </ul>
+                </div>
+                
+                <div class="teaching-experience">
+                    <h3>Programa de Mestrado Profissional em Economia do Setor Público</h3>
+                    <p><strong>Professor</strong> (2017)</p>
+                    <p><em>CAEN/UFC</em></p>
+                    <ul>
+                        <li>Curso de Nivelamento em Economia Matemática (12 h/a)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="cv" class="content-section">
+            <h2>Curriculum Vitae</h2>
+            <div class="cv-section">
+                
+                <div class="cv-download">
+                    <h3>Download do CV</h3>
+                    <a href="hermelino-cv.pdf" target="_blank" class="cv-button">
+                        <i class="fas fa-download"></i> Baixar CV
+                    </a>
+                </div>
+                
+                <div class="cv-contact">
+                    <h3>Contato</h3>
+                    <p>Email: <a href="mailto:hermelinosouza@gmail.com">hermelinosouza@gmail.com</a><br>
+                    <i class="fab fa-github"></i> <a href="https://github.com/hermelino">github.com/hermelino</a><br>
+                    <i class="fas fa-graduation-cap"></i> <a href="http://lattes.cnpq.br/3460004816166577">CNPq Lattes</a><br>
+                    <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/hermelinosouza">hermelinosouza</a></p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Hermelino N. de Souza</p>
+        </footer>
+    </div>
+
+    <script>
+        // Show home section by default
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('home').classList.add('active');
+            
+            // Navigation functionality
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    
+                    // Hide all sections
+                    document.querySelectorAll('.content-section, .home-section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    
+                    // Show target section
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                    }
+                    
+                    // Update active nav
+                    document.querySelectorAll('.navbar a').forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
