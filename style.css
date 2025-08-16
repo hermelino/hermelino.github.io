@@ -45,6 +45,10 @@ body {
     color: var(--accent-color);
 }
 
+.navbar a:hover {
+    border-bottom: 2px solid #1e3a8a;
+}
+
 /* Container */
 .container {
     max-width: 800px;
