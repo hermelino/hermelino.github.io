@@ -512,6 +512,8 @@ footer {
     .profile-photo {
         display: flex;
         justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     
     .profile-photo img {
@@ -538,6 +540,25 @@ footer {
     
     .contact-links {
         align-items: center;
+    }
+    
+    .contact-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .contact-link i {
+        display: block;
+        order: 2;
+        text-align: right;
+    }
+    
+    .contact-text {
+        display: block;
+        order: 1;
+        text-align: left;
     }
 }
 
