@@ -104,16 +104,14 @@ body {
 
 /* Links de contato */
 .contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    align-items: center;
+    display: table;
+    width: 100%;
+    margin-top: 4rem;
+    border-spacing: 0 0.2rem;
 }
 
 .contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
+    display: table-row;
     color: #2c3e50;
     text-decoration: none;
     font-size: 0.9rem;
@@ -122,19 +120,25 @@ body {
 
 .contact-link:hover {
     color: #1a252f;
+}
+
+.contact-link:hover .contact-text {
     text-decoration: underline;
 }
 
 .contact-link i {
+    display: table-cell;
     font-size: 1em;
+    width: 20px;
+    padding-right: 0.5rem;
+    vertical-align: middle;
 }
 
-.contact-link:not(:last-child)::after {
-    content: " • ";
-    color: #666;
-    margin-left: 0.8rem;
-    font-weight: bold;
+.contact-text {
+    display: table-cell;
+    vertical-align: middle;
 }
+
 
 /* Seções de conteúdo */
 .content-section {
