@@ -5,6 +5,7 @@
 # OS files  
 .DS_Store
 Thumbs.db
+*:Zone.Identifier
 
 # Cache and temporary files
 .cache/
@@ -21,3 +22,22 @@ node_modules/
 # Build outputs
 _site/
 dist/
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.idx
+*.ind
+*.ilg
+*.nav
+*.snm
+*.vrb
