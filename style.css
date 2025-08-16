@@ -509,6 +509,11 @@ footer {
         gap: 2rem;
     }
     
+    .profile-photo {
+        display: flex;
+        justify-content: center;
+    }
+    
     .profile-photo img {
         width: 150px;
         height: 150px;
