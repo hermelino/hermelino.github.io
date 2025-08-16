@@ -49,6 +49,11 @@ body {
     border-bottom: 2px solid #1e3a8a;
 }
 
+.navbar a.active {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 4px;
+}
+
 /* Container */
 .container {
     max-width: 800px;
@@ -79,20 +84,20 @@ body {
 .profile-info h1 {
     font-size: 2.5rem;
     font-weight: normal;
-    color: var(--text-color);
+    color: #1a1a1a;
     margin-bottom: 1rem;
 }
 
 .affiliation {
     font-size: 1.1rem;
-    color: var(--text-muted);
+    color: #2c2c2c;
     margin-bottom: 1.5rem;
     line-height: 1.4;
 }
 
 .bio {
     font-size: 1rem;
-    color: var(--text-color);
+    color: #1a1a1a;
     line-height: 1.6;
     margin-bottom: 2rem;
 }
@@ -108,17 +113,19 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: var(--card-bg);
-    color: var(--text-muted);
-    border: 1px solid var(--border-color);
+    width: 44px;
+    height: 44px;
+    background: white;
+    color: #6c757d;
     text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-size: 1.1em;
 }
 
 .social-link:hover {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    background: #6c757d;
+    color: white;
 }
 
 /* Seções de conteúdo */
@@ -144,7 +151,8 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--text-color);
-    margin: 2rem 0 1rem;
+    margin: 2rem 0 3rem;
+    text-align: left;
 }
 
 /* Seção de pesquisa */
@@ -442,11 +450,11 @@ body {
 /* Footer */
 footer {
     text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
+    padding: 1rem 0;
+    margin-top: 14rem;
     border-top: 1px solid var(--border-color);
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 /* Design responsivo */
