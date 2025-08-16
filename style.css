@@ -551,13 +551,13 @@ footer {
     
     .contact-link i {
         display: block;
-        order: 2;
-        text-align: right;
+        order: 1;
+        text-align: left;
     }
     
     .contact-text {
         display: block;
-        order: 1;
+        order: 2;
         text-align: left;
     }
 }
