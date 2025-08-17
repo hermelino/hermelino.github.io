@@ -544,22 +544,22 @@ footer {
     
     .contact-link {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 0.5rem 0;
+        padding: 0.8rem 0;
+        gap: 0.5rem;
     }
     
     .contact-link i {
         display: block;
+        text-align: center;
         order: 1;
-        text-align: left;
     }
     
     .contact-text {
         display: block;
+        text-align: center;
         order: 2;
-        text-align: left;
-        flex: 1;
     }
 }
 
